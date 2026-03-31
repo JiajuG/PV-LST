@@ -84,8 +84,4 @@ Map.addLayer(target, {color: 'FF0000'}, 'Target PV Station');
 ### Usage Note
 These assets can be loaded directly into the GEE Code Editor or through the Python API using the following code snippet:
 
-```javascript
-// Example for GEE JavaScript API
-var pvStations = ee.FeatureCollection("projects/global-phenology/assets/GlobalPVStation");
-var pvBuffers = ee.FeatureCollection("projects/global-phenology/assets/GlobalPVStationBuffer");
-Map.addLayer(pvStations, {color: 'red'}, 'PV Stations');
+```

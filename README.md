@@ -303,8 +303,10 @@ print('📈 NDVI Comparison (Terra vs. Aqua):', scatter);
 print('📈 NDVI Statistical Curves:', line);
 ```
 <img width="1498" height="689" alt="image" src="https://github.com/user-attachments/assets/8abcf0c4-c91a-4e08-a473-9b5236d674d2" />
+
 Batch Processing of NDVI Data (Multiple Stations):
 ```javascript
+
 /**
  * Batch processing of MODIS NDVI (MOD13Q1 & MYD13Q1) for PV station buffers.
  * This script integrates Terra and Aqua datasets to extract vegetation statistics 
@@ -409,6 +411,7 @@ Export.table.toDrive({
 
 print('🚀 Batch processing for NDVI initiated. Please monitor the Tasks tab.');
 ```
+
 Batch Processing of Albedo Data (Multiple Stations):
 <img width="1710" height="693" alt="image" src="https://github.com/user-attachments/assets/ccdf6bc4-101a-402c-b189-1e7683135a76" />
 ```javascript

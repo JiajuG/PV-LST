@@ -11,11 +11,9 @@ The core datasets of this study are hosted on the **Google Earth Engine (GEE)** 
 * <img width="1043" height="836" alt="image" src="https://github.com/user-attachments/assets/1561b5d6-3485-4fa4-833d-233ce18fec53" />
 
 
-## LST Processing Example (GEE JavaScript API)
+## 2. GEE Code  (JavaScript)
 
-The following script demonstrates how to extract and compare the median daytime and nighttime LST for individual PV facilities using the 8-day composite Aqua MODIS product (**MYD11A2**). 
-
-You can copy and paste this script directly into the [GEE Code Editor](https://code.earthengine.google.com/).
+The following script compares daytime and nighttime LST for a specific PV facility using the **MYD11A2** product. You can copy and paste it directly into the [GEE Code Editor](https://code.earthengine.google.com/).
 
 ```javascript
 /**
@@ -80,8 +78,11 @@ var lstCompareChart = ui.Chart.feature.byFeature(lstStats, 'date')
 print('📈 Time Series Analysis:', lstCompareChart);
 Map.centerObject(target, 12);
 Map.addLayer(target, {color: 'FF0000'}, 'Target PV Station');
-
-### Usage Note
-These assets can be loaded directly into the GEE Code Editor or through the Python API using the following code snippet:
-
 ```
+<img width="1668" height="696" alt="image" src="https://github.com/user-attachments/assets/d0529319-3f86-4a45-9144-ce4538ba3f57" />
+
+Batch Processing of LST Data (Multiple Stations):
+The following script performs batch extraction of LST statistics for all PV stations within the dataset.
+
+
+
